@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
 }
 
+/* ===== HEADER ===== */
 header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 2rem 1.5rem 3.5rem;
@@ -31,6 +32,7 @@ header p {
     margin-top: 0.3rem;
 }
 
+/* ===== CONTAINER ===== */
 .container {
     max-width: 860px;
     margin: -2rem auto 2rem;
@@ -39,6 +41,7 @@ header p {
     z-index: 1;
 }
 
+/* ===== TABS ===== */
 .tabs {
     display: flex;
     gap: 0.5rem;
@@ -89,6 +92,7 @@ header p {
     color: #667eea;
 }
 
+/* ===== SEARCH BAR ===== */
 .search-bar {
     background: #fff;
     border-radius: 14px;
@@ -137,6 +141,7 @@ header p {
     color: #667eea;
 }
 
+/* ===== NOTE INPUT CARD ===== */
 .note-input-card {
     background: #fff;
     border-radius: 16px;
@@ -223,6 +228,7 @@ header p {
     box-shadow: none;
 }
 
+/* ===== NOTES HEADER ===== */
 .notes-header {
     display: flex;
     align-items: center;
@@ -255,12 +261,14 @@ header p {
     background: #f9d6d2;
 }
 
+/* ===== NOTES GRID ===== */
 .notes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1rem;
 }
 
+/* ===== NOTE CARD ===== */
 .note-card {
     background: #fff;
     border-radius: 14px;
@@ -347,6 +355,7 @@ header p {
 .btn-icon.restore:hover { background: #e8f5e9; color: #27ae60; }
 .btn-icon.perma:hover   { background: #fdecea; color: #c0392b; }
 
+/* ===== SEARCH HIGHLIGHT ===== */
 mark {
     background: #fff3b0;
     color: inherit;
@@ -354,6 +363,7 @@ mark {
     padding: 0 1px;
 }
 
+/* ===== EMPTY STATE ===== */
 .empty-state {
     text-align: center;
     padding: 3rem 1rem;
@@ -378,22 +388,23 @@ mark {
     margin-top: 0.35rem;
 }
 
+/* ===== TOAST ===== */
 .toast {
     position: fixed;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%) translateY(120%);
     background: #1a1a2e;
-    visibility: hidden;
     color: #fff;
     padding: 0.85rem 1.5rem;
     border-radius: 12px;
     font-size: 0.88rem;
     font-weight: 500;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    transition: transform 0.35s cubic-bezier(0.17, 0.67, 0.35, 1.2);
+    transition: transform 0.35s cubic-bezier(0.17, 0.67, 0.35, 1.2), visibility 0.35s;
     z-index: 100;
     white-space: nowrap;
+    visibility: hidden;
 }
 
 .toast.show {
@@ -401,6 +412,7 @@ mark {
     visibility: visible;
 }
 
+/* ===== MODAL ===== */
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -483,6 +495,7 @@ mark {
 .btn-confirm-delete { background: #e74c3c; color: #fff; }
 .btn-confirm-delete:hover { background: #d43d2f; }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 500px) {
     header { padding: 1.5rem 1rem 3rem; }
     header h1 { font-size: 1.55rem; }
