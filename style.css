@@ -405,11 +405,13 @@ mark {
     z-index: 100;
     white-space: nowrap;
     visibility: hidden;
+    opacity: 0;
 }
 
 .toast.show {
     transform: translateX(-50%) translateY(0);
     visibility: visible;
+    opacity: 1;  
 }
 
 /* ===== MODAL ===== */
